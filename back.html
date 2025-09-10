@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wacera | Portfolio</title>
+  <!-- Favicon (browser tab icon) -->
+  <link rel="icon" type="image/png" href="assets/gingercode-logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+
+</head>
+<body>
+
+    <!-- Navbar -->
+<header class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">Wacera<span class="highlight">Portfolio</span></a>
+    
+    <!-- Hamburger menu -->
+    <div class="nav-toggle" id="navToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Nav links -->
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#certificates">Certificates</a>
+      <a href="front.html">Frontend</a>
+      <!-- <a href="mobile.html">Mobile</a> -->
+    </nav>
+  </div>
+</header>
+
+<section id="backend-projects" class="glass-section">
+  <h2>Backend Projects</h2>
+  <div class="project-grid">
+
+    <div class="glass-card">
+      <img src="assets/jambopay_api.png" alt="JamboPay API" onclick="openImageModal(this.src)" />
+      <h3>JamboPay Wallet Report API Service</h3>
+      <p class="project-description">
+        A backend service built using .NET Core and C# to generate wallet reports, manage transactions, and integrate with JamboPay APIs.
+      </p>
+      <p class="project-tech"><strong>Tech Used:</strong> .NET Core||C# & Go</p>
+    </div>
+
+    <div class="glass-card">
+      <img src="assets/restaurant_api.png" alt="Restaurant API" onclick="openImageModal(this.src)" />
+      <h3>Restaurant Ordering API</h3>
+      <p class="project-description">
+        A RESTful API built with Node.js and Express to manage orders, menu items, and user interactions for a modern restaurant platform.
+      </p>
+      <p class="project-tech"><strong>Tech Used:</strong> Node.js, Express, MongoDB</p>
+      <a href="https://example-restaurant-api.netlify.app/" target="_blank" class="project-link">View Live Demo →</a>
+    </div>
+
+    <div class="glass-card">
+      <img src="assets/ecommerce_api.png" alt="E-commerce API" onclick="openImageModal(this.src)" />
+      <h3>E-commerce Backend</h3>
+      <p class="project-description">
+        Backend system for an e-commerce platform handling product management, user authentication, and order processing.
+      </p>
+      <p class="project-tech"><strong>Tech Used:</strong> Django, Python, PostgreSQL</p>
+      <a href="https://example-ecommerce-api.netlify.app/" target="_blank" class="project-link">View Live Demo →</a>
+    </div>
+
+  </div>
+</section>
+
+ 
+  <section id="follow-up" class="glass-section follow-up">
+    <h3>Stay Connected</h3>
+    <p>  Thank you for visiting my portfolio. I look forward to connecting with you!</p>
+  
+    <div class="follow-icons">
+      <a href="https://github.com/WaceraMercyThird" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/mercy-wacera-206671233/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+     
+    </div>
+    <!-- Logo Image Below -->
+  <div class="follow-logo">
+    <img src="assets/Ginger.png" alt="GingerCode Logo" />
+  </div>
+  </section>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal" onclick="closeImageModal(event)">
+    <button class="close-outline-btn" aria-label="Close modal">&times;</button>
+    <img class="modal-content" id="modalImage" />
+  </div>
+  
+  
+
+  
+  <script src="front.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
