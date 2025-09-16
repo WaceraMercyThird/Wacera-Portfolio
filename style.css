@@ -23,12 +23,23 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
+    background: rgba(0, 0, 0, 0.4); /* semi-transparent dark overlay */
     z-index: -1;
    opacity: 0;
   animation: bodyFadeIn 1.2s ease-in forwards;
 }
 
+.certificate-desc,
+.project-description,
+.blog-card p,
+.about-card p,
+.glass-card p{
+  color: white;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
 
   /* -------------NAVBAR ----------------- */
 
@@ -95,7 +106,7 @@
     padding: 2rem;
   }
   .glass-card {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 16px;
     padding: 2rem;
     max-width: 600px;
@@ -190,7 +201,7 @@
   }
   
   .highlight-box {
-    background: rgba(0, 255, 255, 0.08);
+    background: rgba(0, 255, 255, 0.2);
     padding: 1.5rem;
     border-radius: 15px;
     margin: 2rem 0;
@@ -338,7 +349,7 @@
     max-width: 400px;
     margin-right: 1.5rem;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.45);
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 18px;
     color: #ffffff;
@@ -485,6 +496,9 @@
     text-decoration: none;
     color: inherit;
   }
+  .glass-card h3{
+    color: #00ffff;
+  }
   .glass-card:hover h3 {
     color: #00ffff;
   }
@@ -494,7 +508,7 @@
 
   .service-icon {
   font-size: 3rem;
-  color: #00d4ff;
+  color: #00ffff;
   margin-bottom: 1rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -592,6 +606,48 @@ FOLLOW UP LOGO
   /* transform: scale(1.15) rotate(2deg); */
 }
 
+/* ----------------Achievement------------ */
+/* Continuous Growth Achievements */
+.achievements {
+  padding: 60px 20px;
+  background: rgba(0, 0, 0, 0.45);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.achievements-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.achievement-card {
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  padding: 20px;
+  backdrop-filter: blur(14px);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card h3 {
+  color: #00ffff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.achievement-card p {
+  color: #e5e5e5;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.achievement-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 255, 255, 0.25);
+}
 
  
  /* .............CONTACT FORM................*/
@@ -606,7 +662,7 @@ FOLLOW UP LOGO
     max-width: 650px;
     margin: 2rem auto;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.09);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
@@ -629,7 +685,7 @@ FOLLOW UP LOGO
     padding: 0.8rem;
     border-radius: 10px;
     border: none;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255,0.3);
     color: #fff;
     resize: none;
   }
@@ -738,7 +794,7 @@ FOLLOW UP LOGO
   .blog-card p {
     font-size: 0.95rem;
     margin: 0.5rem 0;
-    color: #ccc;
+    color: white;
   }
   
   .blog-card a {
@@ -750,6 +806,8 @@ FOLLOW UP LOGO
   .blog-card a:hover {
     text-decoration: underline;
   }
+
+
 
   /* .............Responsiveness........... */
   /* Keyframes */
