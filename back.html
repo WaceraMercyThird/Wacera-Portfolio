@@ -38,8 +38,17 @@
   <h2>Backend Projects</h2>
   <div class="project-grid">
 
+
     <div class="glass-card">
-      <img src="assets/jambopay_api.png" alt="JamboPay API" onclick="openImageModal(this.src)" />
+      
+  
+  <img src="assets/jambopay_api.png" alt="JamboPay API" data-index="0" onclick="openImageModal(this.src)" />
+  <div class="hidden-images">
+    <img src="assets/wallet_JP_API.png" alt="JamboPay API 2" data-index="1" />
+    <img src="assets/Wallet_JP_API_1.png" alt="JamboPay API 3" data-index="2" />
+  </div>
+
+  
       <h3>JamboPay Wallet Report API Service</h3>
       <p class="project-description">
         A backend service built using .NET Core and C# to generate wallet reports, manage transactions, and integrate with JamboPay APIs.
@@ -96,16 +105,25 @@
   </div>
   </section>
 
-  <!-- Image Modal -->
-  <div id="imageModal" class="modal" onclick="closeImageModal(event)">
-    <button class="close-outline-btn" aria-label="Close modal">&times;</button>
-    <img class="modal-content" id="modalImage" />
-  </div>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal">
+  <button class="close-outline-btn" aria-label="Close modal" onclick="closeImageModal(event)">&times;</button>
+  <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+  <img class="modal-content" id="modalImage" />
+  <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+
+
   
+
+
+
   
 
   
   <script src="front.js"></script>
+  <script src="back.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
