@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url('assets/codingScreen.jpg');
 
 * {
     margin: 0;
@@ -9,7 +9,7 @@
 
   body {
     font-family: 'Segoe UI', sans-serif;
-    background: url('assets/mactosh.jpg') no-repeat center center fixed;
+    background: url('https://images.unsplash.com/photo-1529661197280-63dc545366c8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
     scroll-behavior: smooth;
@@ -23,7 +23,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
+    background: rgba(0, 0, 0, 0.6); /* semi-transparent dark overlay */
     backdrop-filter: blur(5px);
     z-index: -1;
    opacity: 0;
@@ -38,9 +38,9 @@
   color: white;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+/* p, h1, h2, h3, h4, h5, h6 {
   color: white;
-}
+} */
 
   /* -------------NAVBAR ----------------- */
 
@@ -71,7 +71,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-logo .highlight {
-  color: #00ffff;
+  color: #ff9900;
 }
 
 .nav-links {
@@ -87,14 +87,14 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-links a:hover {
-  color: #00ffff;
+  color: #ff9900;
 }
 
 /* Hamburger menu */
 .nav-toggle {
   display: none;
   cursor: pointer;
-  color: #00ffff;
+  color: #ff9900;
   font-size: 1.5rem;
 }
   
@@ -125,11 +125,11 @@ p, h1, h2, h3, h4, h5, h6 {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #00ffff;
+    border: 2px solid #ff9900;
     margin-bottom: 1rem;
   }
   .highlight {
-    color: #00ffff;
+    color: #ff9900;
   }
   .role {
     font-weight: 600;
@@ -137,7 +137,7 @@ p, h1, h2, h3, h4, h5, h6 {
   
   .focus {
     font-style: italic;
-    color: #00ffff;
+    color: #ff9900;
   }
   
   
@@ -145,7 +145,7 @@ p, h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.6rem 1.5rem;
-    background-color: #00ffff;
+    background-color: #ff9900;
     color: #000;
     border: none;
     border-radius: 10px;
@@ -156,7 +156,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
   
   .download-btn:hover {
-    background-color: #00cccc;
+    background-color: #ff9900;
     transform: scale(1.05);
   }
   
@@ -165,7 +165,7 @@ p, h1, h2, h3, h4, h5, h6 {
     padding: 0.5rem 1.5rem;
     border: none;
     border-radius: 8px;
-    background: #00ffff;
+    background: #ff9900;
     color: #000;
     font-weight: bold;
     cursor: pointer;
@@ -204,7 +204,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
   
   .highlight-box {
-    background: rgba(0, 255, 255, 0.2);
+    background: rgba(255, 153, 0,0.2);
     padding: 1.5rem;
     border-radius: 15px;
     margin: 2rem 0;
@@ -268,10 +268,10 @@ p, h1, h2, h3, h4, h5, h6 {
   }
   
   
-  .skill-card:hover {
+  /* .skill-card:hover {
     transform: scale(1.05);
-    background: rgba(0, 255, 255, 0.2);
-  }
+    background: rgba(255, 153, 0, 0.4);
+  } */
   
   
   
@@ -307,7 +307,7 @@ p, h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     margin-top: 2rem;
   }
-  
+
   .badge-desc {
     font-size: 0.85rem;
     color: #ccc;
@@ -502,6 +502,9 @@ p, h1, h2, h3, h4, h5, h6 {
   .glass-card h3{
     color: #00ffff;
   }
+  .glass-card h4{
+    color: #ff9900;
+  }
   .glass-card:hover h3 {
     color: #00ffff;
   }
@@ -520,107 +523,46 @@ p, h1, h2, h3, h4, h5, h6 {
   transform: scale(1.1);
   color: #ff8c42; /* matches your accent */
 }
-/* ...................
-IMAGE
-................... */
-
-
-/* ...............
-FOLLOW UP LOGO
+/* ................
+BLOG
 ................ */
-.follow-logo {
-  margin-top: 1.5rem;
-  text-align: center;
-}
-
-.follow-logo img {
-  max-width: 120px;
-  opacity: 0.8;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.follow-logo img:hover {
-  opacity: 1;
-  transform: scale(1.05);
-}
-
+  .blog-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-top: 1.5rem;
+  }
   
-  /* ...........MODEL........... */
-  .image-modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
+  .blog-card img {
     width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
   }
   
-  .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 90%;
-    max-height: 80vh;
-    border-radius: 8px;
-  }
-   
-  
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.9);
-    justify-content: center;
-    align-items: center;
+  .blog-card h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
   }
   
-   
-/*................Close Button - Modern Circle Design........... */
-.close-outline-btn, .prev, .next {
-  position: absolute;
-  top: 24px;
-  right: 32px;
-  width: 38px;
-  height: 48px;
-  border: 2px solid rgba(0, 255, 255, 0.3); /* Cyan border */
-  border-radius: 12px;
-  background: rgba(0, 255, 255, 0.06); /* Glass tint */
-  color: #00ffff;
-  font-size: 26px;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 10001;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-  transition: all 0.3s ease;
-  text-shadow: 0 0 6px rgba(0, 255, 255, 0.7);
-}
-
-.close-outline-btn:hover,.prev:hover,.next:hover {
-  background: rgba(0, 255, 255, 0.15);
-  color: #ff00ff;
-  border-color: rgba(255, 0, 255, 0.5);
-  box-shadow: 0 0 20px rgba(255, 0, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.2);
-  /* text-shadow: 0 0 12px rgba(255, 0, 255, 0.7); */
-  /* transform: scale(1.15) rotate(2deg); */
-}
-
-
-.prev { left: 0; top: 50%; transform: translateY(-50%); }
-.next { right: 0; top: 50%; transform: translateY(-50%); }
-
-.hidden-images {
-  display: none;
-}
-
+  .blog-card p {
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+    color: white;
+  }
+  
+  .blog-card a {
+    color: #ff8c42;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .blog-card a:hover {
+    text-decoration: underline;
+  }
+/* ...............
+ACHIEVEMENTS
+................... */
 /* ----------------Achievement------------ */
 /* Continuous Growth Achievements */
 .achievements {
@@ -637,35 +579,10 @@ FOLLOW UP LOGO
   margin-top: 30px;
 }
 
-.achievement-card {
-  background: rgba(0, 0, 0, 0.65);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 18px;
-  padding: 20px;
-  backdrop-filter: blur(14px);
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.achievement-card h3 {
-  color: #00ffff;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.achievement-card p {
-  color: #e5e5e5;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.achievement-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 18px rgba(0, 255, 255, 0.25);
-}
-
  
- /* .............CONTACT FORM................*/
+ /* .............
+  CONTACT FORM
+ ................*/
   .contact-form {
     max-width: 600px;
     margin: 2rem auto;
@@ -735,46 +652,14 @@ FOLLOW UP LOGO
     margin-top: 1rem;
   }
 
-/* ...................FOLLOW UP.................. */
-  .follow-up {
-    text-align: center;
-    margin-top: 2rem;
-  }
-  
-  .follow-up h3 {
-    font-size: 1.6rem;
-    color: #00ffff;
-    margin-bottom: 1rem;
-  }
-  
-  .follow-up p {
-    font-size: 1rem;
-    color: #fff;
-    margin-bottom: 1rem;
-  }
-  
-  .follow-icons {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-  
-  .follow-icons a {
-    font-size: 1.5rem;
-    color: #00ffff;
-    transition: color 0.3s ease;
-  }
-  
-  .follow-icons a:hover {
-    color: #00cccc;
-  }
+
 /* ...............TOAST............ */
   .toast {
     position: fixed;
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 255, 255, 0.9);
+    background: rgba(255, 153, 0, 0.1);
     color: black;
     padding: 1rem 2rem;
     border-radius: 10px;
@@ -787,42 +672,156 @@ FOLLOW UP LOGO
     background: rgba(255, 0, 0, 0.85);
     color: #fff;
   }
-  
-  /* ...............BLOG................. */
-  .blog-grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    margin-top: 1.5rem;
+
+/* ...............
+FOOTER
+................ */
+.footer {
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.footer-col h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer-col p {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+  .follow-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
   }
   
-  .blog-card img {
+  .follow-icons a {
+    font-size: 1.5rem;
+    color: #ff9900;
+    transition: color 0.3s ease;
+  }
+  
+  .follow-icons a:hover {
+    color: #ffcccc;
+  }
+
+
+.follow-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.follow-logo img {
+  max-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0.85;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.follow-logo img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+
+/* ..................... */
+   
+
+  
+  /* ...........MODEL........... */
+  .image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 10px;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
   }
   
-  .blog-card h3 {
-    margin-top: 1rem;
-    font-size: 1.2rem;
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 8px;
+  }
+   
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
   }
   
-  .blog-card p {
-    font-size: 0.95rem;
-    margin: 0.5rem 0;
-    color: white;
-  }
+   
+/*................Close Button - Modern Circle Design........... */
+.close-outline-btn, .prev, .next {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  width: 38px;
+  height: 48px;
+  border: 2px solid rgba(255, 153, 0, 0.3); /* Cyan border */
+  border-radius: 12px;
+  background: rgba(0, 255, 255, 0.06); /* Glass tint */
+  color: #ff9900;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10001;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px rgba(255, 153, 0, 0.3);
+  transition: all 0.3s ease;
+  text-shadow: 0 0 6px rgba(255, 153, 0, 0.7);
+}
+
+.close-outline-btn:hover,.prev:hover,.next:hover {
+  background: rgba(0, 255, 255, 0.15);
+  color: rgb(0, 255, 255);
+  border-color: rgba(0, 255, 255, 0.7);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 40px rgba(0, 255, 255, 0.2);
+  /* text-shadow: 0 0 12px rgba(255, 0, 255, 0.7); */
+  /* transform: scale(1.15) rotate(2deg); */
+}
+
+
+.prev { left: 0; top: 50%; transform: translateY(-50%); }
+.next { right: 0; top: 50%; transform: translateY(-50%); }
+
+.hidden-images {
+  display: none;
+}
+
+
   
-  .blog-card a {
-    color: #ff8c42;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .blog-card a:hover {
-    text-decoration: underline;
-  }
+
 
 
 
