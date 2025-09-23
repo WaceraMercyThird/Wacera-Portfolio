@@ -1,6 +1,9 @@
 // SLIDES
 function setupInfiniteSlider(trackId) {
   const track = document.getElementById(trackId);
+
+  if (!track) return; // stop if element does not exist
+
   const cards = track.querySelectorAll(".quote-card");
   let index = 0;
 
@@ -68,6 +71,8 @@ function scrollToSection(id) {
     const modal = document.getElementById("imageModal");
     modal.style.display = "none";
   }
+
+  
   
 
   const PortfolioApp = {  

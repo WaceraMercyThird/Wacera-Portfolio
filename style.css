@@ -517,6 +517,10 @@ p, h1, h2, h3, h4, h5, h6 {
   transform: scale(1.1);
   color: #ff8c42; /* matches your accent */
 }
+/* ...................
+IMAGE
+................... */
+
 
 /* ...............
 FOLLOW UP LOGO
@@ -577,11 +581,11 @@ FOLLOW UP LOGO
   
    
 /*................Close Button - Modern Circle Design........... */
-.close-outline-btn {
+.close-outline-btn, .prev, .next {
   position: absolute;
   top: 24px;
   right: 32px;
-  width: 48px;
+  width: 38px;
   height: 48px;
   border: 2px solid rgba(0, 255, 255, 0.3); /* Cyan border */
   border-radius: 12px;
@@ -597,13 +601,21 @@ FOLLOW UP LOGO
   text-shadow: 0 0 6px rgba(0, 255, 255, 0.7);
 }
 
-.close-outline-btn:hover {
+.close-outline-btn, .prev, .next:hover {
   background: rgba(0, 255, 255, 0.15);
   color: #ff00ff;
   border-color: rgba(255, 0, 255, 0.5);
   box-shadow: 0 0 20px rgba(255, 0, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.2);
   /* text-shadow: 0 0 12px rgba(255, 0, 255, 0.7); */
   /* transform: scale(1.15) rotate(2deg); */
+}
+
+
+.prev { left: 0; top: 50%; transform: translateY(-50%); }
+.next { right: 0; top: 50%; transform: translateY(-50%); }
+
+.hidden-images {
+  display: none;
 }
 
 /* ----------------Achievement------------ */
