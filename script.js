@@ -104,6 +104,3 @@ function scrollToSection(id) {
 
   // ------------------
 
-
-  
-  
