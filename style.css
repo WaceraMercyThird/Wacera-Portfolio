@@ -174,7 +174,7 @@
     padding: 4rem 2rem;
     margin: 2rem;
     border-radius: 16px;
-    background: rgba(255, 255, 255, 0.05);
+    /* background: rgba(255, 255, 255, 0.05); */
     backdrop-filter: blur(5px);
     text-align: center;
   }
@@ -419,8 +419,8 @@
   .project-grid .glass-card {
     padding: 1.5rem;
     border-radius: 16px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(12px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
@@ -677,9 +677,14 @@ ACHIEVEMENTS
 FOOTER
 ................ */
 .footer {
-  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
   padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   text-align: center;
+  margin: 2rem;
 }
 
 .footer-container {
@@ -700,22 +705,21 @@ FOOTER
   color: #fff;
 }
 
-  .follow-icons {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-  
-  .follow-icons a {
-    font-size: 1.5rem;
-    color: #ff9900;
-    transition: color 0.3s ease;
-  }
-  
-  .follow-icons a:hover {
-    color: #ffcccc;
-  }
+.follow-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
 
+.follow-icons a {
+  font-size: 1.5rem;
+  color: #ff9900;
+  transition: color 0.3s ease;
+}
+
+.follow-icons a:hover {
+  color: #ffcccc;
+}
 
 .follow-logo {
   display: flex;
@@ -738,47 +742,42 @@ FOOTER
   transform: scale(1.1);
 }
 
+/* ...........MODEL........... */
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
 
-/* ..................... */
-   
-
-  
-  /* ...........MODEL........... */
-  .image-modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-  
-  .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 90%;
-    max-height: 80vh;
-    border-radius: 8px;
-  }
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 8px;
+}
    
   
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.9);
-    justify-content: center;
-    align-items: center;
-  }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
   
    
 /*................Close Button - Modern Circle Design........... */
@@ -820,11 +819,6 @@ FOOTER
 }
 
 
-  
-
-
-
-
   /* .............Responsiveness........... */
   /* Keyframes */
 @keyframes bodyFadeIn {
@@ -844,8 +838,15 @@ FOOTER
   100% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
 }
  
-  
-  /* Responsive styles */
+/* -------------------------
+   RESPONSIVE STYLE
+-------------------------- */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr; /* switch to 2 columns */
+  }
+}
+
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
@@ -895,6 +896,15 @@ FOOTER
       flex-direction: column;
       align-items: center;
     }
+
+    .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .follow-icons {
+    justify-content: center;
+  }
   }
 
   @media (max-width: 480px) {
