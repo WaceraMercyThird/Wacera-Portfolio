@@ -126,7 +126,7 @@
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #ff9900;
-  background-color: #fff;
+  background-color: #bbbaba;
   margin-bottom: 1rem;
   box-shadow: 0 4px 15px rgba(255, 153, 0, 0.4); /* orange glow */
 }
