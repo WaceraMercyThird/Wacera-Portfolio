@@ -120,14 +120,17 @@
   .glass-card:hover {
     transform: scale(1.03);
   }
-  .profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ff9900;
-    margin-bottom: 1rem;
-  }
+ .profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff9900;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 15px rgba(255, 153, 0, 0.4); /* orange glow */
+}
+
   .highlight {
     color: #ff9900;
   }
@@ -680,7 +683,7 @@ FOOTER
   background: rgba(255, 255, 255, 0.06);
   border-radius: 16px;
   padding: 2rem;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   text-align: center;
