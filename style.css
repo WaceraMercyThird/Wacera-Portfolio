@@ -98,7 +98,9 @@
   font-size: 1.5rem;
 }
   
-  /*------------Hero--------------  */
+  /*------------
+  Hero
+  --------------  */
   .hero {
     min-height: 100vh;
     display: flex;
@@ -327,7 +329,40 @@
     margin-bottom: 0.8rem;
     object-fit: cover;
   }
-/* ................QOUTE SLIDES.......... */
+
+  /* ...............
+METRICS SECTION
+................ */
+ .metrics .counter {
+  font-size: 2.8rem;   /* adjust size as needed */
+  font-weight: 700;
+  color: #ff9900;
+  display: block;
+  margin-bottom: 0.5rem;
+ 
+}
+
+
+
+.metric-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.metric-card h3 {
+  font-size: 2rem;
+  color: #ff9900;
+  margin-bottom: 0.5rem;
+}
+
+.metric-card p {
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+/* ................
+QOUTE SLIDES
+................... */
   .horizontal-quote-slider {
     overflow: hidden;
     position: relative;
